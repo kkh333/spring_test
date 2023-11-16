@@ -1,5 +1,9 @@
 package com.std.sbb;
 
+import com.std.sbb.answer.Answer;
+import com.std.sbb.answer.AnswerRepository;
+import com.std.sbb.question.Question;
+import com.std.sbb.question.QuestionRepository;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

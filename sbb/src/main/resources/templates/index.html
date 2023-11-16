@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <style>
+        table {
+            overflow: auto;
+            border-collapse: collapse;
+        }
+        table tr th {
+            font-size: 14px;
+            color: #fff;
+            background: #555;
+            box-sizing: border-box;
+            padding: 12px;
+            white-space: nowrap;
+            border: 1px solid #eee;
+            text-align: center;
+        }
+        table tr td {
+            font-size: 14px;
+            font-weight: inherit;
+            color: #555;
+            background: #fff;
+            box-sizing: border-box;
+            padding: 12px;
+            white-space: nowrap;
+            border: 1px solid #eee;
+            text-align: center;
+        }
+    </style>
+    <table>
+        <thead>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>내용</th>
+            <th>작성일시</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="question : ${questionList}">
+            <td th:text="${question.id}"></td>
+            <td th:text="${question.content}"></td>
+            <td th:text="${question.subject}"></td>
+            <td th:text="${question.createDate}"></td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

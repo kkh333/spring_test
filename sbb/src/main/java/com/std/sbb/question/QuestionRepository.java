@@ -1,5 +1,6 @@
-package com.std.sbb;
+package com.std.sbb.question;
 
+import com.std.sbb.question.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
